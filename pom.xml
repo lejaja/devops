@@ -20,16 +20,16 @@
 	</properties>
 	
 	<distributionManagement>
-		<repository>
-			<id>release</id>
-			<name>releases</name>
-			<url>http://localhost:8081/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshot</id>
-			<name>snapshots</name>
-			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
+	    <repository>
+	        <id>central</id>
+	        <name>DESKTOP-JD37HBU-releases</name>
+	        <url>http://localhost:8081/artifactory/libs-release-local</url>
+	    </repository>
+	    <snapshotRepository>
+	        <id>snapshots</id>
+	        <name>DESKTOP-JD37HBU-snapshots</name>
+	        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+	    </snapshotRepository>
 	</distributionManagement>
 
 	<scm>
@@ -72,6 +72,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
 		</plugins>
 	</build>
 
